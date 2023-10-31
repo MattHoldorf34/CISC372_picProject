@@ -1,0 +1,10 @@
+Script started on Mon Oct 30 20:20:48 2023
+]0;mholdorf@r1n00.darwin:~/372Proj3/CISC372_picProject[?1034h[mholdorf@r1n00 CISC372_picProject]$ exitsrun image-pthreads pic1.jpg edge[1P
+Completed in: 1.000000 seconds
+]0;mholdorf@r1n00.darwin:~/372Proj3/CISC372_picProject[mholdorf@r1n00 CISC372_picProject]$ srun image-pthread pic1.jpg edgeexit[Ksrun image-pthreads pic1.jpg edge[2PopenMP pic1.jpg edge
+Process Complete
+Completed in: 1 seconds
+]0;mholdorf@r1n00.darwin:~/372Proj3/CISC372_picProject[mholdorf@r1n00 CISC372_picProject]$ exit
+exit
+
+Script done on Mon Oct 30 20:21:17 2023

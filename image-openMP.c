@@ -93,7 +93,7 @@ enum KernelTypes GetKernelType(char* type){
 int main(int argc,char** argv)
 {
     long t1,t2;
-
+    t1 = time(NULL);
     stbi_set_flip_vertically_on_load(0); 
     if (argc!=3) return Usage();
     char* fileName=argv[1];
@@ -112,7 +112,6 @@ int main(int argc,char** argv)
         return -1;
     }
 
-	t1=time(NULL);
 
     destImage.bpp=srcImage.bpp;
     destImage.height=srcImage.height;

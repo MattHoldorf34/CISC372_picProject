@@ -126,7 +126,7 @@ enum KernelTypes GetKernelType(char* type){
 //argv is expected to take 2 arguments.  First is the source file name (can be jpg, png, bmp, tga).  Second is the lower case name of the algorithm.
 int main(int argc,char** argv){
     double t1,t2;
-
+    t1 = time(NULL);
     stbi_set_flip_vertically_on_load(0);
 
     if (argc!=3) return Usage();
@@ -147,7 +147,6 @@ int main(int argc,char** argv){
         return -1;
     }
 
-    t1 = time(NULL);
     destImage.bpp=srcImage.bpp;
     destImage.height=srcImage.height;
     destImage.width=srcImage.width;
@@ -179,6 +178,6 @@ int main(int argc,char** argv){
     free(thread_handles);
     free(destImage.data);
     
-	printf("Completed in: %f seconds\n",t2-t1);
+    printf("Completed in: %f seconds\n",t2-t1);
     return 0;
 }
